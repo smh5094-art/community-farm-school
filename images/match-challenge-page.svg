@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Community Farm School — $250,000 Match Challenge One-Pager (page 2 of donor PDF) -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1600 2000"
+     preserveAspectRatio="xMidYMid meet"
+     font-family="'Nunito', 'Nunito Sans', system-ui, sans-serif">
+
+  <defs>
+    <linearGradient id="goldBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fbf6e9"/>
+      <stop offset="100%" stop-color="#f3ead3"/>
+    </linearGradient>
+    <linearGradient id="goldBadge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e0b35e"/>
+      <stop offset="100%" stop-color="#b87f2c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background + border -->
+  <rect x="0" y="0" width="1600" height="2000" fill="url(#goldBg)"/>
+  <rect x="30" y="30" width="1540" height="1940" fill="none"
+        stroke="#c8a866" stroke-width="2" stroke-dasharray="3 4"/>
+
+  <!-- Header -->
+  <g transform="translate(800, 110)" text-anchor="middle">
+    <text font-size="20" font-weight="800" fill="#8a5a2b" letter-spacing="6">
+      COMMUNITY FARM SCHOOL · CARLISLE, MA
+    </text>
+    <text y="58" font-size="50" font-weight="900" fill="#1f1c17" letter-spacing="-1">
+      The $250,000 Match
+    </text>
+  </g>
+
+  <!-- 2× medallion -->
+  <g transform="translate(800, 380)">
+    <circle cx="0" cy="0" r="150" fill="url(#goldBadge)"/>
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#fff" stroke-width="4" opacity="0.4"/>
+    <text x="0" y="20" font-size="120" font-weight="900" fill="#fff" text-anchor="middle"
+          letter-spacing="-4">2×</text>
+    <text x="0" y="80" font-size="16" font-weight="800" fill="#fff" text-anchor="middle"
+          letter-spacing="4">MATCH</text>
+  </g>
+
+  <!-- Headline + body -->
+  <g transform="translate(800, 620)" text-anchor="middle">
+    <text font-size="36" font-weight="900" fill="#1f1c17" letter-spacing="-0.5">
+      Every dollar you give is doubled.
+    </text>
+    <text y="58" font-size="22" fill="#3a342a">
+      An anonymous founding donor will match every gift, dollar-for-dollar,
+    </text>
+    <text y="86" font-size="22" fill="#3a342a">
+      up to a total of $250,000 in matching funds.
+    </text>
+  </g>
+
+  <!-- Three-up example panel -->
+  <g transform="translate(160, 800)">
+    <!-- Card 1: $1,000 -->
+    <rect x="0" y="0" width="400" height="280" rx="14" fill="#fff" stroke="#e8e2d4" stroke-width="2"/>
+    <text x="200" y="40" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+      YOUR SEEDLING GIFT
+    </text>
+    <text x="200" y="100" font-size="48" font-weight="900" fill="#1f1c17" text-anchor="middle">$1,000</text>
+    <path d="M 188 118 L 212 118 L 200 142 Z" fill="#c89c4f"/>
+    <text x="200" y="170" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+      BECOMES
+    </text>
+    <text x="200" y="222" font-size="44" font-weight="900" fill="#3d6b2e" text-anchor="middle">$2,000</text>
+    <text x="200" y="252" font-size="14" fill="#5d574c" text-anchor="middle">in classroom impact</text>
+
+    <!-- Card 2: $25,000 -->
+    <g transform="translate(440, 0)">
+      <rect x="0" y="0" width="400" height="280" rx="14" fill="#fff" stroke="#e8e2d4" stroke-width="2"/>
+      <text x="200" y="40" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+        YOUR FOUNDERS CIRCLE
+      </text>
+      <text x="200" y="100" font-size="48" font-weight="900" fill="#1f1c17" text-anchor="middle">$25,000</text>
+      <path d="M 188 118 L 212 118 L 200 142 Z" fill="#c89c4f"/>
+      <text x="200" y="170" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+        BECOMES
+      </text>
+      <text x="200" y="222" font-size="44" font-weight="900" fill="#3d6b2e" text-anchor="middle">$50,000</text>
+      <text x="200" y="252" font-size="14" fill="#5d574c" text-anchor="middle">in named-feature impact</text>
+    </g>
+
+    <!-- Card 3: $50,000 -->
+    <g transform="translate(880, 0)">
+      <rect x="0" y="0" width="400" height="280" rx="14" fill="#fff" stroke="#e8e2d4" stroke-width="2"/>
+      <text x="200" y="40" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+        YOUR HARVEST PATRON
+      </text>
+      <text x="200" y="100" font-size="48" font-weight="900" fill="#1f1c17" text-anchor="middle">$50,000</text>
+      <path d="M 188 118 L 212 118 L 200 142 Z" fill="#c89c4f"/>
+      <text x="200" y="170" font-size="13" font-weight="800" fill="#8a5a2b" letter-spacing="3" text-anchor="middle">
+        BECOMES
+      </text>
+      <text x="200" y="222" font-size="44" font-weight="900" fill="#3d6b2e" text-anchor="middle">$100,000</text>
+      <text x="200" y="252" font-size="14" fill="#5d574c" text-anchor="middle">in legacy-partner impact</text>
+    </g>
+  </g>
+
+  <!-- How the match works -->
+  <g transform="translate(160, 1180)">
+    <text font-size="28" font-weight="900" fill="#1f1c17">How the match works</text>
+    <line x1="0" y1="48" x2="80" y2="48" stroke="#c89c4f" stroke-width="3"/>
+
+    <!-- 4-point list -->
+    <g transform="translate(0, 100)" font-size="17" fill="#3a342a">
+      <text font-weight="800" fill="#3d6b2e">1.  Make your gift</text>
+      <text y="28" x="34">Give at any tier from $250 (Roots) to $250,000+ (Crown).</text>
+
+      <text y="80" font-weight="800" fill="#3d6b2e">2.  Your gift is doubled</text>
+      <text y="108" x="34">Our anonymous founding donor matches every dollar, dollar-for-dollar.</text>
+
+      <text y="160" font-weight="800" fill="#3d6b2e">3.  The cap is $250,000 in matching funds</text>
+      <text y="188" x="34">Once we collectively raise $250,000 in matched gifts, the founding donor has fulfilled their full pledge.</text>
+
+      <text y="240" font-weight="800" fill="#3d6b2e">4.  Every level on the giving tree counts</text>
+      <text y="268" x="34">The match applies to every gift, large or small — so a $250 Friend of the Farm becomes a $500 contribution.</text>
+    </g>
+  </g>
+
+  <!-- Bottom call-to-action band -->
+  <rect x="100" y="1700" width="1400" height="180" rx="14" fill="#3d6b2e"/>
+  <g transform="translate(800, 1755)" text-anchor="middle" fill="#fff">
+    <text font-size="22" font-weight="800" letter-spacing="3">UNLOCK YOUR MATCH TODAY</text>
+    <text y="44" font-size="20" opacity="0.95">
+      Visit communityfarmschool.com or contact Jenna Hull
+    </text>
+    <text y="78" font-size="18" opacity="0.9">
+      jenna.hull@communityfarmschool.com · 781-956-7836
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <text x="800" y="1950" font-size="12" fill="#8d877a" text-anchor="middle" font-style="italic">
+    Community Farm School is a 501(c)(3) nonprofit. All gifts are tax-deductible.
+  </text>
+</svg>
