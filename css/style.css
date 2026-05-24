@@ -805,3 +805,487 @@ hr {
   color: var(--color-footer-muted);
   line-height: var(--leading-loose);
 }
+
+/* ============================================================
+   Match challenge banner (homepage + tree.html)
+   ============================================================ */
+.match-banner {
+  background: linear-gradient(135deg, #f7efd9 0%, #f0e3b8 100%);
+  border-top: 3px solid var(--color-gold);
+  border-bottom: 3px solid var(--color-gold);
+  padding: var(--space-12) 0;
+  margin: var(--space-8) 0;
+}
+.match-banner__inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-10);
+  align-items: center;
+  max-width: 880px;
+  margin-inline: auto;
+}
+.match-banner__badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(200,156,79,0.35);
+  flex-shrink: 0;
+}
+.match-banner__badge-num {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.match-banner__badge-label {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  margin-top: 4px;
+}
+.match-banner__eyebrow {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+}
+.match-banner__headline {
+  font-size: var(--text-xl);
+  letter-spacing: -0.02em;
+  line-height: var(--leading-tight);
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+}
+.match-banner__body {
+  font-size: var(--text-md);
+  color: var(--color-text);
+  line-height: var(--leading-snug);
+  margin-bottom: var(--space-5);
+  max-width: 60ch;
+}
+.match-banner__body strong { font-weight: 800; }
+.match-banner .btn {
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+}
+.match-banner .btn:hover {
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
+
+/* Compact variant — on tree.html where the headline carries the match story */
+.match-banner--compact { padding: var(--space-8) 0; margin: 0; }
+.match-banner--compact .match-banner__badge { width: 110px; height: 110px; }
+.match-banner--compact .match-banner__badge-num { font-size: 2.25rem; }
+.match-banner--compact .match-banner__headline { font-size: var(--text-lg); }
+
+@media (max-width: 720px) {
+  .match-banner__inner { grid-template-columns: 1fr; gap: var(--space-6); text-align: center; }
+  .match-banner__badge { margin-inline: auto; width: 110px; height: 110px; }
+  .match-banner__badge-num { font-size: 2.25rem; }
+  .match-banner__headline { font-size: var(--text-lg); }
+  .match-banner__body { font-size: var(--text-base); margin-inline: auto; }
+}
+
+/* ============================================================
+   Container narrow variant (story.html sections)
+   ============================================================ */
+.container--narrow { max-width: 720px; }
+
+/* ============================================================
+   Page hero eyebrow (story.html, tree.html)
+   ============================================================ */
+.page-hero__eyebrow {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: var(--color-accent);
+  margin-bottom: var(--space-5);
+}
+
+/* ============================================================
+   CTA band button row
+   ============================================================ */
+.cta-band__buttons {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.cta-band__buttons .btn--outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+.cta-band__buttons .btn--outline:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* ============================================================
+   Homepage tree teaser
+   ============================================================ */
+.tree-teaser__art {
+  max-width: 420px;
+  margin: var(--space-10) auto 0;
+}
+.tree-teaser__art img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+}
+
+/* ============================================================
+   The Giving Tree (tree.html)
+   ============================================================ */
+.tree-section {
+  background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface) 100%);
+  padding-top: var(--space-12);
+  padding-bottom: var(--space-20);
+}
+.tree-layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 460px) 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+.tree-illustration {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+.tree-illustration img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.10);
+}
+.tree-tiers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+/* Tier cards (shared base) */
+.tier-card {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: var(--space-6);
+  align-items: start;
+  background: var(--color-bg);
+  border: 1px solid var(--color-divider);
+  border-left: 6px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6) var(--space-8);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.tier-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.tier-card__marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--color-text-muted);
+  padding: var(--space-3) 0;
+  border-right: 1px dashed var(--color-rule);
+  min-height: 80px;
+}
+.tier-card__pos { display: inline-block; line-height: var(--leading-snug); }
+.tier-card__body {}
+.tier-card__name {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-2);
+  letter-spacing: -0.01em;
+}
+.tier-card__amt {
+  font-size: var(--text-md);
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: var(--space-3);
+}
+.tier-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-snug);
+  margin-bottom: var(--space-3);
+}
+.tier-card__match {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-accent);
+  background: #faf3e3;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius);
+  display: inline-block;
+}
+.tier-card__match strong { font-weight: 800; }
+
+/* Position-specific accents (top-down: crown → roots) */
+.tier-card--crown {
+  border-left-color: var(--color-gold);
+  background: linear-gradient(135deg, #fffaf0 0%, #faf3e3 100%);
+}
+.tier-card--crown .tier-card__amt { color: var(--color-gold); }
+.tier-card--crown .tier-card__marker { color: var(--color-gold); }
+
+.tier-card--canopy-upper { border-left-color: #5d8c45; }
+.tier-card--canopy-upper .tier-card__amt { color: #5d8c45; }
+.tier-card--canopy-upper .tier-card__marker { color: #5d8c45; }
+
+.tier-card--canopy-inner { border-left-color: #6b9650; }
+.tier-card--canopy-inner .tier-card__amt { color: #6b9650; }
+.tier-card--canopy-inner .tier-card__marker { color: #6b9650; }
+
+.tier-card--branches-upper { border-left-color: var(--color-primary); }
+.tier-card--branches-mid { border-left-color: var(--color-primary); }
+.tier-card--branches-lower { border-left-color: var(--color-primary); }
+
+.tier-card--trunk-upper { border-left-color: var(--color-accent); }
+.tier-card--trunk-upper .tier-card__amt { color: var(--color-accent); }
+.tier-card--trunk-upper .tier-card__marker { color: var(--color-accent); }
+
+.tier-card--trunk-lower { border-left-color: var(--color-accent); }
+.tier-card--trunk-lower .tier-card__amt { color: var(--color-accent); }
+.tier-card--trunk-lower .tier-card__marker { color: var(--color-accent); }
+
+.tier-card--soil { border-left-color: #6a5535; }
+.tier-card--soil .tier-card__amt { color: #6a5535; }
+.tier-card--soil .tier-card__marker { color: #6a5535; }
+
+.tier-card--roots { border-left-color: #4a3a22; }
+.tier-card--roots .tier-card__amt { color: #4a3a22; }
+.tier-card--roots .tier-card__marker { color: #4a3a22; }
+
+/* Tablet / mobile — tree layout collapses to single column, illustration on top */
+@media (max-width: 960px) {
+  .tree-layout { grid-template-columns: 1fr; gap: var(--space-10); }
+  .tree-illustration { position: static; max-width: 360px; margin-inline: auto; }
+}
+@media (max-width: 640px) {
+  .tier-card {
+    grid-template-columns: 1fr;
+    padding: var(--space-5);
+    gap: var(--space-3);
+  }
+  .tier-card__marker {
+    border-right: none;
+    border-bottom: 1px dashed var(--color-rule);
+    padding: 0 0 var(--space-3);
+    justify-content: flex-start;
+    min-height: 0;
+  }
+  .tier-card__name { font-size: var(--text-md); }
+  .tier-card__amt { font-size: var(--text-base); }
+}
+
+/* ============================================================
+   Story page — two-col & three-col cards
+   ============================================================ */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+  max-width: 880px;
+  margin-inline: auto;
+}
+.two-col__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-lg);
+  padding: var(--space-10);
+}
+.two-col__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin-bottom: var(--space-5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.two-col__title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+.two-col__card p {
+  font-size: var(--text-base);
+  line-height: var(--leading-snug);
+  color: var(--color-text);
+}
+
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+  margin-top: var(--space-10);
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.pillar-card {
+  text-align: center;
+  padding: var(--space-8) var(--space-5);
+}
+.pillar-card__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  margin: 0 auto var(--space-5);
+}
+.pillar-card__title {
+  font-size: var(--text-md);
+  margin-bottom: var(--space-3);
+}
+.pillar-card p {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  line-height: var(--leading-snug);
+}
+
+@media (max-width: 720px) {
+  .two-col, .three-col { grid-template-columns: 1fr; gap: var(--space-6); }
+  .two-col__card { padding: var(--space-6); }
+}
+
+/* ============================================================
+   Story page — eyebrow & h3
+   ============================================================ */
+.story-eyebrow {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: var(--space-3);
+}
+.story-h3 {
+  font-size: var(--text-md);
+  color: var(--color-primary);
+  margin-bottom: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+/* ============================================================
+   Story page — footprint (2 stats + paragraph)
+   ============================================================ */
+.footprint {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-10);
+  align-items: center;
+  max-width: 880px;
+  margin: var(--space-10) auto 0;
+  padding: var(--space-10);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+}
+.footprint__stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+.footprint__stat { text-align: center; }
+.footprint__num {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+  color: var(--color-primary);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.footprint__label {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin-top: var(--space-2);
+}
+.footprint__text p {
+  font-size: var(--text-md);
+  line-height: var(--leading-snug);
+}
+@media (max-width: 720px) {
+  .footprint { grid-template-columns: 1fr; padding: var(--space-6); gap: var(--space-6); }
+  .footprint__stats { flex-direction: row; justify-content: space-around; }
+}
+
+/* ============================================================
+   Pull quote (Kimmerer, Malaguzzi)
+   ============================================================ */
+.pullquote-section { padding: var(--space-16) 0; }
+.pullquote {
+  margin: 0;
+  text-align: center;
+  padding: var(--space-10) var(--space-6);
+  border-left: none;
+  position: relative;
+}
+.pullquote p {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-primary);
+  line-height: var(--leading-snug);
+  letter-spacing: -0.01em;
+  max-width: 22ch;
+  margin: 0 auto var(--space-6);
+}
+.pullquote cite {
+  font-size: var(--text-sm);
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: var(--color-text-muted);
+}
+.pullquote--small p { font-size: var(--text-lg); max-width: 36ch; }
+@media (max-width: 720px) {
+  .pullquote p { font-size: var(--text-xl); }
+  .pullquote--small p { font-size: var(--text-md); }
+}
+
+/* ============================================================
+   Give list — two-column variant
+   ============================================================ */
+.give-list--two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4) var(--space-8);
+  max-width: 880px;
+  margin-inline: auto;
+  margin-top: var(--space-8);
+}
+@media (max-width: 720px) {
+  .give-list--two-col { grid-template-columns: 1fr; }
+}
