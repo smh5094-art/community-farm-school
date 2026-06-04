@@ -1376,3 +1376,46 @@ hr {
   margin: 0 auto var(--space-8);
   line-height: 1.5;
 }
+
+/* ===================== New tier-card variants (6 leaves + Visionary) ===================== */
+/* Color-keyed to match the giving-tree-v3 poster */
+
+.tier-card--visionary {
+  border-left-color: #c89c4f;
+  background: linear-gradient(180deg, #fff 0%, #faf3e0 100%);
+}
+.tier-card--visionary .tier-card__amt { color: #8a5a2b; }
+.tier-card--visionary .tier-card__marker { color: #8a5a2b; }
+
+/* Founders Circle - deep forest green crown leaf */
+.tier-card--crown { border-left-color: #1f3a23; }
+.tier-card--crown .tier-card__amt { color: #1f3a23; }
+.tier-card--crown .tier-card__marker { color: #1f3a23; }
+
+/* Welcome Bridge - sage green */
+.tier-card--upper-left { border-left-color: #8fa67f; }
+.tier-card--upper-left .tier-card__amt { color: #5d7a4d; }
+.tier-card--upper-left .tier-card__marker { color: #5d7a4d; }
+
+/* Root & Branch - olive */
+.tier-card--upper-right { border-left-color: #8a8a4a; }
+.tier-card--upper-right .tier-card__amt { color: #6b6b2f; }
+.tier-card--upper-right .tier-card__marker { color: #6b6b2f; }
+
+/* Harvest Circle - moss */
+.tier-card--middle-left { border-left-color: #8a9243; }
+.tier-card--middle-left .tier-card__amt { color: #6a722a; }
+.tier-card--middle-left .tier-card__marker { color: #6a722a; }
+
+/* Seeds of Change - pale sage */
+.tier-card--middle-right { border-left-color: #a3b39c; }
+.tier-card--middle-right .tier-card__amt { color: #6e7c66; }
+.tier-card--middle-right .tier-card__marker { color: #6e7c66; }
+
+/* Sprouts - cream base leaf */
+.tier-card--base {
+  border-left-color: #c89c4f;
+  background: linear-gradient(180deg, #fffaf0 0%, #f5e8c8 100%);
+}
+.tier-card--base .tier-card__amt { color: #8a5a2b; }
+.tier-card--base .tier-card__marker { color: #8a5a2b; }
